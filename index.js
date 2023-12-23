@@ -16,6 +16,7 @@ import { uaWorkLogic } from "./botUaWork.js";
 
 dotenv.config()
 const app = express();
+app.use(express.static('public'))
 export const bot = new Telegraf(process.env.BOT_TOKEN);
 
 // console.log(process.env.BOT_TOKEN);
